@@ -1,7 +1,6 @@
 # Final Project - Kampung Siber [Frontend]
 
 ## Team 1 Member
-<br>
 <ul>
   <li>Muhammad Aqmal Khafidz Pratama</li>
   <li>Muhammad Rafly Sura Nirwana</li>
@@ -9,7 +8,6 @@
 </ul>
 
 ## Team 2 Member
-<br>
 <ul>
   <li>Chalik Gerra A </li>
   <li>Jonathan lael aruan</li>
@@ -17,7 +15,6 @@
 </ul>
 
 ## Team 3 Member
-<br>
 <ul>
   <li>Aryaputra Pratama</li>
   <li>Firman Aprilla</li>
