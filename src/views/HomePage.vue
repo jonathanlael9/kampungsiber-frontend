@@ -1,8 +1,9 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-toolbar style="color:#343A40; height:100px;" >
-        <ion-title style="color:white; padding-top: 20px; margin-left :40px; font-size: 40px;">Kampung<span style="color:#00DC72">Siber</span></ion-title>
+      <ion-toolbar style="color:#343A40; height:100px;">
+        <ion-title style="color:white; padding-top: 20px; margin-left :40px; font-size: 40px;">Kampung<span
+            style="color:#00DC72">Siber</span></ion-title>
         <ion-buttons class="button-nav" slot="primary">
           <ion-button style="font-size: 35px;">
             Beranda
@@ -23,7 +24,7 @@
         <ion-row class="back1">
 
           <ion-col>
-            <span class="title1">Kampung<span style="color:#00DC72">Siber</span></span>
+            <!-- <span class="title1">Kampung<span style="color:#00DC72">Siber</span></span> -->
             <span class="text1">Klinik Coding Pertama di Indonesia!</span>
             <span class="text2"><span class="text2.a">Sekarang kamu ga perlu overthinking menghadapi <br>error dan bug
                 lagi dengan konsultasi sama "dokter-dokter"</span><br>coding kita sesuai spesialisasinya lho</span>
@@ -137,10 +138,16 @@
             </ion-card>
           </ion-col>
         </ion-row>
-        <ion-row style="background-color: #F6F9FC;">
-          <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-              class="testimoni-text">Lihat Testimoni lainnya~~</span></ion-button>
+
+        <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
+                class="testimoni-text">Lihat Testimoni lainnya~~</span></ion-button>
+          </ion-col>
+          <ion-col></ion-col>
         </ion-row>
+
         <h2 class="konsultan">Konsultan rekomendasi dari kami untukmu hari ini!</h2>
         <div style="background-color: #F6F9FC;">
           <hr style="border: 10px;
@@ -156,7 +163,7 @@
           <ion-col style="z-index: +100">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px;">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -181,14 +188,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -213,14 +221,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -245,14 +254,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100; margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -277,7 +287,8 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -287,7 +298,7 @@
           <ion-col style="z-index: +100">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -312,14 +323,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -344,14 +356,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -376,14 +389,15 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100; margin-left:62px">
             <ion-card style="z-index: -1; position:relative;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center;">John Doe</ion-card-title>
+                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
                 <hr style="border: 100px;
     border-top: 3px double #333;
     color: #000000;
@@ -408,15 +422,111 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat Detail</span></ion-button>
+                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                    Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
         </ion-row>
-        <ion-row style="background-color: #F6F9FC;">
-          <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-              class="testimoni-text">...Lihat Selengkapnya</span></ion-button>
+
+        <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
+                class="testimoni-text">...Lihat Selengkapnya</span></ion-button>
+          </ion-col>
+          <ion-col></ion-col>
         </ion-row>
+
+        <ion-row justify-content-center style="background-color: #F6F9FC; height: 100%; padding-top: 100px;">
+          <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+            <ion-card class="card-center">
+              <ion-card-header>
+                <ion-card-title
+                  style="font-size:55px; text-align: center; padding: 23px 147px; font-weight:bolder;">Konsultan kami
+                  sudah kerja dimana aja sih?</ion-card-title>
+              </ion-card-header>
+              <ion-card-content style="padding: 70px 20px">
+                <div style="display:flex; justify-content:center">
+                  <img
+                    src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png"
+                    class="company-img">
+                  <img src="https://logos-download.com/wp-content/uploads/2020/06/Gojek_Logo.png" class="company-img">
+                  <img
+                    src="https://www.freepnglogos.com/uploads/logo-tokopedia-png/tokopedia-oralgen-nupearl-advanced-teeth-whitening-system-with-11.png"
+                    class="company-img">
+                  <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" class="company-img">
+                </div>
+                <div style="display:flex; padding-top:90px; justify-content:center">
+                  <img src="https://logos-download.com/wp-content/uploads/2018/03/Grab_logo_green.png"
+                    class="company-img">
+                  <img
+                    src="https://1.bp.blogspot.com/-x0AXKXB9uqU/XnKxGP2VVfI/AAAAAAAASbY/r1872kTuFVQWfHJg0DqI8mzoTuo-_IttgCLcBGAsYHQ/s1600/ruang%2Bguru.png"
+                    class="company-img" style="height:130px;padding-top:-30px;">
+                  <img src="https://spectrathailand.com/wp-content/uploads/2019/11/Lazada-logo.png" class="company-img">
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-row>
+
+        <h2 class="penutup" style="font-size:45px">Nah dengan itu menutup semua perkenalan dari kami,
+          tunggu apalagi? ayo konsultasi dengan konsultasi kami sekarang! :)</h2>
+        <div style="background-color: #F6F9FC;">
+          <hr style="border: 10px;
+    border-top: 3px double #333;
+    color: #000000;
+    overflow: visible;
+    text-align: center;
+    margin:0px 200px;
+    z-index: +100;">
+        </div>
+        <ion-row style="background-color: #F6F9FC; padding-bottom: 100px;">
+          <h3 class="informasi">Untuk Informasi Lebih Lanjut</h3>
+          <div class="more-information">
+            <ion-col size="8">
+              <h3 class="pertanyaan">Jika ada pertanyaan mengenai konsultasi yang kami
+                sediakan, bisa langsung aja chat kami! </h3>
+
+            </ion-col>
+            <ion-col size="auto">
+              <ion-button expand="block" shape="round" color="light" fill="outline" class="chat-button">
+                <ion-img slot="start" src="https://i.postimg.cc/65Y5M1GH/Vector-1.png" size="auto"
+                  style="padding-right: 15px; padding-left: 45px;"></ion-img>
+                <span style="padding-right: 100px">Chat Kami</span></ion-button>
+
+            </ion-col>
+          </div>
+        </ion-row>
+
+        <div style="background-color: #F6F9FC;">
+          <hr style="border: 10px;
+    border-top: 3px double #333;
+    color: #000000;
+    overflow: visible;
+    text-align: center;
+    z-index: +100;">
+        </div>
+
+        <ion-row class="ion-justify-content-between" style="background-color: #F6F9FC; height: auto;">
+          <ion-col size="3">
+            <h3 id="footer1">Kampungsiber@2077</h3>
+          </ion-col>
+          <ion-col size="3" style="margin-right: 73px">
+            <div style="display:inline-block;vertical-align:top;">
+              <img src="https://clipground.com/images/e-mail-clipart-2.jpg" style="height: 27px; margin-top: 61px;">
+            </div>
+            <div style="display:inline-block;">
+              <p id="footer2">Kampungsiber@mail.com</p>
+            </div>
+            <div style="display:inline-block;vertical-align:top;">
+              <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 24px; margin-top: 61px;">
+              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
+            </div>
+          </ion-col>
+        </ion-row>
+
       </ion-grid>
     </ion-content>
   </ion-page>
@@ -587,11 +697,30 @@ ion-card-content {
 }
 
 .testimoni-button {
+
+  font-family: "Poppins";
   background-color: white;
-  border-radius: 45px;
-  margin: 69px 685px;
+  border-radius: 50px;
+  /* margin: 69px 685px; */
+  margin-top: 69px;
   font-size: 35px;
   font-weight: light;
+  /* width: fit-content; */
+  text-align: center;
+  margin: 48px 100px;
+  height: 100px;
+}
+
+.chat-button {
+
+  font-family: "Poppins";
+  background-color: white;
+  border-radius: 50px;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: light;
+  text-align: center;
+  margin-top: 13%;
   height: 100px;
 }
 
@@ -695,8 +824,65 @@ ion-button {
   padding-bottom: 13px;
 }
 
+.penutup {
+  background-color: #F6F9FC;
+  color: black;
+  padding: 0px 180px;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 143px;
+  padding-bottom: 55px;
+}
+
 ion-card {
   border-radius: 20px;
+}
+
+.company-img {
+  height: 70px;
+  padding: 0px 40px;
+}
+
+.informasi {
+  font-family: 'Poppins';
+  font-size: 25px;
+  color: #000000;
+  padding-top: 154px;
+  padding-left: 21px;
+  font-weight: bold;
+}
+
+.more-information {
+  display: flex;
+  background-color: #000D18;
+  width: 100%;
+  margin: 18px 10px;
+  border-radius: 20px;
+}
+
+.pertanyaan {
+  color: #FFFFFF;
+  padding: 61px 55px;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 60px;
+}
+
+#footer1,
+#footer2 {
+  font-family: 'Poppins';
+  color: #7C7676;
+  font-size: 25px;
+  padding: 56px 21px;
+}
+
+#footer1 {
+  text-align: left;
+}
+
+#footer2 {
+  text-align: right;
 }
 
 /* .card1{
