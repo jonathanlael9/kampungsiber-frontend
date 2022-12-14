@@ -2,8 +2,8 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <ion-toolbar style="color:#343A40; height:100px;">
-        <ion-title style="color:white; padding-top: 20px; margin-left :40px; font-size: 40px;">Kampung<span
-            style="color:#00DC72">Siber</span></ion-title>
+        <ion-title style="color:white; padding-top: 20px; margin-left :40px; font-size: 40px;">Kampung<h1
+            style="color:#00DC72">Siber</h1></ion-title>
         <ion-buttons class="button-nav" slot="primary">
           <ion-button style="font-size: 35px;">
             Beranda
@@ -21,31 +21,30 @@
       </ion-toolbar>
 
       <ion-grid>
-        <ion-row class="back1">
-
+        <ion-row class="ion-justify-content-between" id="back1">
           <ion-col>
-            <!-- <span class="title1">Kampung<span style="color:#00DC72">Siber</span></span> -->
-            <span class="text1">Klinik Coding Pertama di Indonesia!</span>
-            <span class="text2"><span class="text2.a">Sekarang kamu ga perlu overthinking menghadapi <br>error dan bug
-                lagi dengan konsultasi sama "dokter-dokter"</span><br>coding kita sesuai spesialisasinya lho</span>
-            <ion-button id="btn1" color="success" size="large"><span class=btn1text>Book
-                Sekarang!!!</span></ion-button>
+            <h1 class="text1">
+              Klinik Coding Pertama di Indonesia
+            </h1>
+            <p class="text2">
+              Sekarang kamu ga perlu overthinking menghadapi error dan bug lagi dengan konsultasi sama "dokter-dokter" coding kita sesuai spesialisasinya lho 
+            </p>
+            <ion-button id="btn1" color="new" size="large"><p class=btn1text>Book
+                Sekarang!</p></ion-button>
           </ion-col>
-          <ion-col style="right: 0; position: relative; float:right; margin-left: 300px;">
+          <ion-col style="right: 0; position: relative; float:right; margin-left: 130px;">
             <ion-img id="img1" src="https://i.postimg.cc/8kKqbpjg/Group-17.png" alt="pict1"></ion-img>
             <ion-img id="img2" src="https://i.postimg.cc/44jq78Yz/Group-18.png" alt="pict1"></ion-img>
           </ion-col>
         </ion-row>
 
-        <!-- <div class="container-fluid"> -->
-        <ion-row class="row2">
-          <ion-col size-xl="auto">
-            <!-- <h2 style='color:black;'>Mengapa kita lebih baik dari yang lain</h2> -->
-            <span class="text3">Mengapa kita lebih <br>baik dari yang lain</span>
-            <span class="text4"><br>Tentu jika kamu ingin memilih kami
-              <br>maka kamu harus tau alasan untuk
-              <br>memilih kami kan?
-              <br>nah ini dia alasannya!</span>
+        <ion-row style="background-color: #F6F9FC; padding-top: 108px;padding-bottom: 162px;" >
+          <ion-col size-xl="auto" style >
+            <h2 class="text3">Mengapa kita lebih baik dari yang lain</h2>
+            <p class="text4">Tentu jika kamu ingin memilih kami
+              maka kamu harus tau alasan untuk
+              memilih kami kan?
+              <br>nah ini dia alasannya!</p>
           </ion-col>
           <ion-col size-xl="2.2" style="margin-right: 10px; margin-left: 25px;">
             <ion-img src="https://i.postimg.cc/MTNbyJpY/Card1.png"></ion-img>
@@ -58,7 +57,6 @@
           </ion-col>
         </ion-row>
 
-        <!-- </div> -->
         <ion-row style="background-color: #F6F9FC;">
           <ion-col size-xl="10" style="margin:auto">
             <ion-img src="https://i.postimg.cc/WzXx74xk/list-bahasa.png"></ion-img>
@@ -521,8 +519,10 @@
             </div>
             <div style="display:inline-block;vertical-align:top;">
               <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 24px; margin-top: 61px;">
-              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
-              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="http://seldomsounds.com/images/social/twitter.png"
+                style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png"
+                style="height: 24px; margin-top: 61px; padding-left: 5px;">
             </div>
           </ion-col>
         </ion-row>
@@ -551,6 +551,15 @@ export default defineComponent({
   margin: 0;
   padding: 0;
   font-family: "Poppins";
+}
+
+.ion-color-new {
+	--ion-color-base: var(--ion-color-new);
+	--ion-color-base-rgb: var(--ion-color-new-rgb);
+	--ion-color-contrast: var(--ion-color-new-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+	--ion-color-shade: var(--ion-color-new-shade);
+	--ion-color-tint: var(--ion-color-new-tint);
 }
 
 #container {
@@ -607,24 +616,6 @@ ion-card-content {
   text-align: center;
 }
 
-.title1 {
-  position: absolute;
-  width: 381px;
-  height: 36px;
-  left: 30px;
-  top: 51px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 68px;
-
-  color: #FFFFFF;
-}
-
-
-
 .button-nav {
   color: white;
   font-family: 'Times New Roman';
@@ -632,7 +623,7 @@ ion-card-content {
   height: 50px;
 }
 
-.back1 {
+#back1 {
   /* position: absolute; */
   width: 100%;
   height: 840px;
@@ -640,40 +631,29 @@ ion-card-content {
   background: linear-gradient(180deg, #000D18 0%, #021C35 100%);
 }
 
-.row2 {
-  padding: 150px 50px;
-  background-color: #F6F9FC;
-}
+
 
 .text1 {
-  position: absolute;
-  width: 849px;
-  height: 68px;
-  left: 19px;
-  top: 210px;
-
+  margin: 166px 0px 27px 100px;
+  position: relative;
+  inline-size: 750px;
+  overflow-wrap: break-word;
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 68px;
-  /* identical to box height */
+  font-size: 70px;
+  line-height: 105px;
   color: #FFFFFF;
 }
 
 .text2 {
-  position: absolute;
-  width: 1826px;
-  height: 212px;
-  left: 22px;
-  top: 274px;
-
+  margin-left: 100px;
+  position: relative;
+  inline-size: 1000px;
+  overflow-wrap: break-word;
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  font-size:35px;
   line-height: 52px;
-
   color: #FFFFFF;
 }
 
@@ -751,17 +731,18 @@ ion-button {
 }
 
 #btn1 {
-  position: absolute;
-  width: 397px;
-  height: 70px;
-  left: 57px;
-  top: 490px;
+  position: relative;
+  margin: 70px 0px 0px 100px;
+  color:#00DC72;
+  border-radius: 15px;
+  height:70px
 }
 
 .btn1text {
-  font-size: 35px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  padding: 1px 22px
 }
 
 .btn2text {
@@ -770,37 +751,38 @@ ion-button {
   color: #FFFFFF;
 }
 
+
 .text3 {
   /* position: absolute; */
-  width: 553px;
-  height: 166px;
-  left: 55px;
-  top: 968px;
 
   font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 55px;
   line-height: 82px;
 
   color: #000000;
 
+  margin: 8px 0px 25px 100px;
+  position: relative;
+  inline-size: 553px;
+  overflow-wrap: break-word;
 }
 
 .text4 {
   /* position: absolute; */
-  width: 628px;
-  height: 212px;
-  left: 55px;
-  top: 1157px;
-
   font-family: 'Poppins';
-  font-style: normal;
+
   font-weight: 400;
-  font-size: 35px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 48px;
 
   color: #000000;
+
+  margin-left: 100px;
+  position: relative;
+  inline-size: 574px;
+  overflow-wrap: break-word;
 }
 
 .testimoni {
@@ -884,10 +866,4 @@ ion-card {
 #footer2 {
   text-align: right;
 }
-
-/* .card1{
-  position: absolute;
-  left: 708px;
-top: 1092px;
-} */
 </style>
