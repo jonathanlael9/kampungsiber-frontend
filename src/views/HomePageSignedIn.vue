@@ -1,52 +1,70 @@
 <template>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <ion-page>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-content :fullscreen="true">
       <ion-row>
-          <ion-toolbar style="color:#343A40">
-          <ion-title style="color:white; margin-left :20px;margin-top: 10px; margin-bottom: 10px; font-size: 25px;">Kampung<span style="color:#00DC72; font-size: 25px;">Siber</span></ion-title>
-          <ion-buttons class ="button-nav" slot="primary" style="margin-bottom: 20px;" >
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/LandingPage">
+        <ion-toolbar style="color: #343a40">
+          <ion-title style="color: white; margin-left: 100px; font-size: 25px"
+            >Kampung<span style="color: #00dc72; font-size: 25px"
+              >Siber</span
+            ></ion-title
+          >
+          <ion-buttons class="button-nav" slot="primary" style="margin-bottom: 25px; color: white;">
+            <ion-button
+              class="ion-text-capitalize"
+              style="font-size: 25px; margin-left: 30px"
+              href="/homepage"
+            >
               Beranda
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/FaqPage">
-              FAQ
+            <ion-button
+              class="ion-text-capitalize"
+              style="font-size: 25px; margin-left: 30px"
+              href="/Dashboard"
+            >
+              Dashboard
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/ContactUs">
-              Contact Us
+            <ion-button
+              class="ion-text-capitalize"
+              style="font-size: 25px; margin-left: 30px"
+              href="/Riwayat"
+            >
+              Riwayat
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/SignIn">
-              Sign In
+            <ion-button
+              class="ion-text-capitalize"
+              style="font-size: 25px; margin-left: 30px"
+              href="/ProfilePage"
+            >
+              Profile
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-row>
-
       <ion-grid>
-        <ion-row class="ion-justify-content-between" id="back1">
-          <ion-col>
-            <h1 class="text1">
-              Klinik Coding Pertama di Indonesia
-            </h1>
-            <p class="text2">
-              Sekarang kamu ga perlu overthinking menghadapi error dan bug lagi dengan konsultasi sama "dokter-dokter" coding kita sesuai spesialisasinya lho 
-            </p>
-            <ion-button id="btn1" color="success" size="large"><p class=btn1text>Book
-                Sekarang!</p></ion-button>
+        <ion-row class="back1">
+          <ion-col style="margin-left: 100px;">
+            <span class="text1">Klinik Coding<br> Pertama di Indonesia!</span>
+            <span class="text2"><span class="text2.a"><br><br>Sekarang kamu ga perlu overthinking menghadapi <br>error dan bug
+                lagi dengan konsultasi sama "dokter-dokter"</span><br>coding kita sesuai spesialisasinya lho<br></span>
+            <ion-button id="btn1" color="success" size="large" href="/Dashboard" style=" margin-top: 80px;"><span class=btn1text>Book
+                Sekarang!</span></ion-button>
           </ion-col>
-          <ion-col style="right: 0; position: relative; float:right; margin-left: 130px;">
+          <ion-col style="right: 0; position: relative; float:right; margin-right: 70px;">
             <ion-img id="img1" src="https://i.postimg.cc/8kKqbpjg/Group-17.png" alt="pict1"></ion-img>
             <ion-img id="img2" src="https://i.postimg.cc/44jq78Yz/Group-18.png" alt="pict1"></ion-img>
           </ion-col>
         </ion-row>
 
-        <ion-row style="background-color: #F6F9FC; padding-top: 108px;padding-bottom: 162px;" >
-          <ion-col size-xl="auto" style >
-            <h2 class="text3">Mengapa kita lebih baik dari yang lain</h2>
-            <p class="text4">Tentu jika kamu ingin memilih kami
-              maka kamu harus tau alasan untuk
-              memilih kami kan?
-              <br>nah ini dia alasannya!</p>
+        <!-- <div class="container-fluid"> -->
+        <ion-row class="row2">
+          <ion-col size-xl="auto">
+            <!-- <h2 style='color:black;'>Mengapa kita lebih baik dari yang lain</h2> -->
+            <span class="text3">Mengapa kita lebih <br>baik dari yang lain</span>
+            <span class="text4"><br>Tentu jika kamu ingin memilih kami
+              <br>maka kamu harus tau alasan untuk
+              <br>memilih kami kan?
+              <br>nah ini dia alasannya!</span>
           </ion-col>
           <ion-col size-xl="2.2" style="margin-right: 10px; margin-left: 25px;">
             <ion-img src="https://i.postimg.cc/MTNbyJpY/Card1.png"></ion-img>
@@ -59,6 +77,7 @@
           </ion-col>
         </ion-row>
 
+        <!-- </div> -->
         <ion-row style="background-color: #F6F9FC;">
           <ion-col size-xl="10" style="margin:auto">
             <ion-img src="https://i.postimg.cc/WzXx74xk/list-bahasa.png"></ion-img>
@@ -143,7 +162,7 @@
           <ion-col></ion-col>
           <ion-col>
             <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-                class="testimoni-text">Lihat Testimoni lainnya~~</span></ion-button>
+                class="testimoni-text" href="/TestimoniPage">Lihat Testimoni lainnya~~</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
@@ -188,7 +207,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -221,7 +240,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -254,7 +273,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -287,7 +306,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -323,7 +342,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -356,7 +375,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -389,7 +408,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -422,7 +441,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large"><span class="btn2text">Lihat
+                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" >Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -490,7 +509,7 @@
 
             </ion-col>
             <ion-col size="auto">
-              <ion-button expand="block" shape="round" color="light" fill="outline" class="chat-button">
+              <ion-button href="/ContactUs" expand="block" shape="round" color="light" fill="outline" class="chat-button">
                 <ion-img slot="start" src="https://i.postimg.cc/65Y5M1GH/Vector-1.png" size="auto"
                   style="padding-right: 15px; padding-left: 45px;"></ion-img>
                 <span style="padding-right: 100px">Chat Kami</span></ion-button>
@@ -521,34 +540,45 @@
             </div>
             <div style="display:inline-block;vertical-align:top;">
               <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 24px; margin-top: 61px;">
-              <img src="http://seldomsounds.com/images/social/twitter.png"
-                style="height: 24px; margin-top: 61px; padding-left: 5px;">
-              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png"
-                style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
             </div>
           </ion-col>
         </ion-row>
-
       </ion-grid>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage, IonToolbar, IonTitle, IonButton, IonButtons, IonGrid, IonCol, IonRow } from '@ionic/vue';
-import { defineComponent } from 'vue';
-
+import {
+  IonContent,
+  IonPage,
+  IonToolbar,
+  IonTitle,
+  IonButton,
+  IonButtons,
+  IonCol,
+  IonRow,
+} from "@ionic/vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'HomePage',
+  name: "HomePageSignedIn",
   components: {
     IonContent,
-    IonPage, IonToolbar, IonTitle, IonButton, IonButtons, IonGrid, IonCol, IonRow,
+    IonPage,
+    IonToolbar,
+    IonTitle,
+    IonButton,
+    IonButtons,
+    IonCol,
+    IonRow,
   },
   mounted(){
       let user= localStorage.getItem('user');
-      if(user){
-        this.$router.push({name:'SignedIn'})
+      if(!user){
+        this.$router.push({name:'LandingPage'})
       }
     }
 });
@@ -560,127 +590,117 @@ export default defineComponent({
   padding: 0;
   font-family: "Poppins";
 }
-
-.ion-color-new {
-	--ion-color-base: var(--ion-color-new);
-	--ion-color-base-rgb: var(--ion-color-new-rgb);
-	--ion-color-contrast: var(--ion-color-new-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
-	--ion-color-shade: var(--ion-color-new-shade);
-	--ion-color-tint: var(--ion-color-new-tint);
-}
-
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
 }
-
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
-
 #container a {
   text-decoration: none;
 }
-
 ion-card {
   --background: #FFFFFF;
   --color: #000000;
-
 }
-
 ion-card-title {
   --color: #000000;
 }
-
 .testimoni-card-title {
   font-size: 35px;
   padding-top: 100px;
   text-align: center;
 }
-
 ion-card-content {
   --color: #000000;
 }
-
 .testimoni-card-content {
   font-size: 20px;
   padding: 1em;
   text-align: center;
 }
-
+.title1 {
+  position: absolute;
+  width: 381px;
+  height: 36px;
+  left: 30px;
+  top: 51px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 68px;
+  color: #FFFFFF;
+}
 .button-nav {
   color: white;
   font-family: 'Times New Roman';
   padding-top: 20px;
   height: 50px;
 }
-
-#back1 {
+.back1 {
   /* position: absolute; */
   width: 100%;
   height: 840px;
   left: 0px;
   background: linear-gradient(180deg, #000D18 0%, #021C35 100%);
 }
-
-
-
+.row2 {
+  padding: 150px 50px;
+  background-color: #F6F9FC;
+}
 .text1 {
-  margin: 166px 0px 27px 100px;
-  position: relative;
-  inline-size: 750px;
-  overflow-wrap: break-word;
+  position: absolute;
+  width: 849px;
+  height: 68px;
+  left: 19px;
+  top: 210px;
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 600;
-  font-size: 70px;
-  line-height: 105px;
+  font-size: 45px;
+  line-height: 68px;
+  /* identical to box height */
   color: #FFFFFF;
 }
-
 .text2 {
-  margin-left: 100px;
-  position: relative;
-  inline-size: 1000px;
-  overflow-wrap: break-word;
+  position: absolute;
+  width: 1826px;
+  height: 212px;
+  left: 22px;
+  top: 274px;
   font-family: 'Poppins';
+  font-style: normal;
   font-weight: 400;
-  font-size:35px;
+  font-size: 35px;
   line-height: 52px;
   color: #FFFFFF;
 }
-
 #img1 {
+  margin-left: 100px;
   box-sizing: border-box;
-
   position: absolute;
   width: auto;
   height: auto;
   /* left: 1138px; */
   top: 47.67px;
 }
-
 .text2.a {
   left: 42px;
 }
-
 .testimoni-button {
-
   font-family: "Poppins";
   background-color: white;
   border-radius: 50px;
@@ -693,9 +713,7 @@ ion-card-content {
   margin: 48px 100px;
   height: 100px;
 }
-
 .chat-button {
-
   font-family: "Poppins";
   background-color: white;
   border-radius: 50px;
@@ -706,83 +724,65 @@ ion-card-content {
   margin-top: 13%;
   height: 100px;
 }
-
 ion-button {
   text-transform: inherit;
 }
-
 #img2 {
-
   box-sizing: border-box;
-
   position: absolute;
   width: auto;
   height: auto;
-  margin-left: 215px;
+  margin-left: 300px;
   /* left: 1353px; */
   top: 291px;
 }
-
 #img1,
 #img2 {
   float: right;
 }
-
 #btn1 {
-  position: relative;
-  margin: 70px 0px 0px 100px;
-  color:#00DC72;
-  border-radius: 15px;
-  height:70px
+  position: absolute;
+  width: 397px;
+  height: 70px;
+  left: 57px;
+  top: 490px;
 }
-
 .btn1text {
-  font-size: 45px;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
-  padding: 1px 22px
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
-
 .btn2text {
   font-family: "Poppins";
   font-size: 20px;
   color: #FFFFFF;
 }
-
-
 .text3 {
   /* position: absolute; */
-
+  width: 553px;
+  height: 166px;
+  left: 55px;
+  top: 968px;
   font-family: 'Poppins';
-
+  font-style: normal;
   font-weight: 600;
   font-size: 55px;
   line-height: 82px;
-
   color: #000000;
-
-  margin: 8px 0px 25px 100px;
-  position: relative;
-  inline-size: 553px;
-  overflow-wrap: break-word;
 }
-
 .text4 {
   /* position: absolute; */
+  width: 628px;
+  height: 212px;
+  left: 55px;
+  top: 1157px;
   font-family: 'Poppins';
-
+  font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
-
+  font-size: 35px;
+  line-height: 52px;
   color: #000000;
-
-  margin-left: 100px;
-  position: relative;
-  inline-size: 574px;
-  overflow-wrap: break-word;
 }
-
 .testimoni {
   background-color: #F6F9FC;
   color: black;
@@ -793,7 +793,6 @@ ion-button {
   padding-top: 190px;
   padding-bottom: 50px;
 }
-
 .konsultan {
   background-color: #F6F9FC;
   color: black;
@@ -803,7 +802,6 @@ ion-button {
   padding-top: 100px;
   padding-bottom: 13px;
 }
-
 .penutup {
   background-color: #F6F9FC;
   color: black;
@@ -814,16 +812,13 @@ ion-button {
   padding-top: 143px;
   padding-bottom: 55px;
 }
-
 ion-card {
   border-radius: 20px;
 }
-
 .company-img {
   height: 70px;
   padding: 0px 40px;
 }
-
 .informasi {
   font-family: 'Poppins';
   font-size: 25px;
@@ -832,7 +827,6 @@ ion-card {
   padding-left: 21px;
   font-weight: bold;
 }
-
 .more-information {
   display: flex;
   background-color: #000D18;
@@ -840,7 +834,6 @@ ion-card {
   margin: 18px 10px;
   border-radius: 20px;
 }
-
 .pertanyaan {
   color: #FFFFFF;
   padding: 61px 55px;
@@ -848,7 +841,6 @@ ion-card {
   font-size: 40px;
   font-weight: 60px;
 }
-
 #footer1,
 #footer2 {
   font-family: 'Poppins';
@@ -856,12 +848,15 @@ ion-card {
   font-size: 25px;
   padding: 56px 21px;
 }
-
 #footer1 {
   text-align: left;
 }
-
 #footer2 {
   text-align: right;
 }
+/* .card1{
+  position: absolute;
+  left: 708px;
+top: 1092px;
+} */
 </style>

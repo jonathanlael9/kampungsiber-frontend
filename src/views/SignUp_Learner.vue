@@ -1,4 +1,5 @@
 <template>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-page color="primary" style="background-color: black;">
         <ion-header :translucent="true">
             <ion-toolbar style="color:#343A40; height: 113px;">

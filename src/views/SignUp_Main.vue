@@ -1,4 +1,5 @@
 <template>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-page color="primary" style="background-color: black;">
         <ion-header :translucent="true">
             <ion-toolbar style="color:#343A40; height: 113px;">
@@ -30,7 +31,6 @@
                             Tanggal Lahir
                         </h2>
                         <div class="textbox">
-
                             <ion-item color="dark" style="height: 133px;">
                                 <ion-input class="text-box" placeholder="DD/MM/YYYY"></ion-input>
                                 <ion-button id="right-end" class="btn" outline="fill">
@@ -43,8 +43,6 @@
                                         <ion-content class="ion-padding">Hello World!</ion-content>
                                     </ng-template>
                                 </ion-popover>
-                                <!--  -->
-
                             </ion-item>
 
                         </div>

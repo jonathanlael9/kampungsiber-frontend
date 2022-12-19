@@ -1,4 +1,5 @@
 <template>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-page color="primary" style="background-color: black;">
         <ion-header :translucent="true">
             <ion-toolbar style="color:#343A40; height: 113px;">
@@ -15,20 +16,21 @@
                         <ion-card-title class="title">Buat akun sebagai</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                        <ion-button class="btn" fill="outline">
+                        <ion-button class="btn" fill="outline" href="/Signuplearner">
                             <div class="btn-text">
                                 Client
                                 <img src="https://i.postimg.cc/1R71cJkC/Rectangle-53.png">
                             </div>
                         </ion-button>
-                        <ion-button class="btn" fill="outline">
+                        <ion-button class="btn" fill="outline" href="/Signupmentor">
                             <div class="btn-text">
                                 Consultant
                                 <img src="https://i.postimg.cc/XqPMjYKS/Rectangle-49.png">
                             </div>
                         </ion-button>
                         <h3 id="beranda">
-                            Ingin kembali ke beranda? <a href="" style="color:#FF5454;text-decoration: none;">Klik disini</a>
+                            Ingin kembali ke beranda? <a href="" style="color:#FF5454;text-decoration: none;">Klik
+                                disini</a>
                         </h3>
                     </ion-card-content>
                 </ion-card>
@@ -125,12 +127,13 @@ export default defineComponent({
 
 }
 
-.btn-text{
+.btn-text {
     display: inline-block;
     text-align: center;
     letter-spacing: normal;
 }
-.btn-text img{
+
+.btn-text img {
     display: block;
     padding-top: 18px;
     width: 200px;
@@ -139,12 +142,12 @@ export default defineComponent({
     margin-right: auto;
 }
 
-#beranda{
+#beranda {
     font-weight: 400;
-font-size: 25px;
-line-height: 38px;
-color: #A7A4A4;
-text-align: center;
-padding: 50px 0px;
+    font-size: 25px;
+    line-height: 38px;
+    color: #A7A4A4;
+    text-align: center;
+    padding: 50px 0px;
 }
 </style>

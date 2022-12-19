@@ -1,4 +1,5 @@
 <template>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-page>
         <NavbarVue />
         <ion-content>

@@ -1,4 +1,5 @@
 <template>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-page color="primary" style="background-color: black;">
         <ion-header :translucent="true">
             <ion-toolbar style="color:#343A40; height: 113px;">
@@ -127,7 +128,7 @@ ion-checkbox {
 
 }
 
-ion-button{
+ion-button {
     margin-bottom: 20px;
 }
 
@@ -154,7 +155,7 @@ ion-button{
 
 ion-item {
     --background: transparent !important;
-    margin-left: 10px ;
+    margin-left: 10px;
 }
 
 .title {
@@ -258,14 +259,13 @@ ion-item {
     /* margin-left: 80%; */
 }
 
-.checkbox{
+.checkbox {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 38px;
-color:#000000;
-padding: 20px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #000000;
+    padding: 20px 20px;
 }
-
 </style>
