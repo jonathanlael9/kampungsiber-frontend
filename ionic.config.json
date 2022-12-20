@@ -1,0 +1,7 @@
+{
+  "name": "Kampung_Siber",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

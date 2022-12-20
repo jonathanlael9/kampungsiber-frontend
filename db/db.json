@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "firstname": "Andi",
+      "lastname": "Haryanto",
+      "email": "andi@gmail.com",
+      "date": "13-04-03",
+      "gender": "Laki-laki",
+      "notelp": "081234567890",
+      "image": {"href": "https://i.postimg.cc/T2zvDWwt/profile.png"},
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "firstname": "Indi",
+      "lastname": "Aryanto",
+      "email": "Indi@gmail.com",
+      "date": "13-04-03",
+      "gender": "Laki-laki",
+      "notelp": "081234567890",
+      "image": "https://i.postimg.cc/9MWrnrty/download-4.jpg",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "firstname": "Rawdo",
+      "lastname": "Madina",
+      "email": "jeruk@gmail.com",
+      "date": "21-04-03",
+      "gender": "Laki-laki",
+      "notelp": "081234567890",
+      "image": "https://i.postimg.cc/PxmQmpfZ/FY4b-DRp-VEAEZq-CA.jpg",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "firstname": "kucing",
+      "lastname": "besar",
+      "email": "kucing@gmail.com",
+      "date": "13-04-03",
+      "gender": "Laki-laki",
+      "notelp": "081234567890",
+      "image": "https://i.postimg.cc/mkKZBDMX/download-3.jpg",
+      "password": "12345678",
+      "id": 4
+    }
+  ]
+}
